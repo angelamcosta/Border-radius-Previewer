@@ -1,0 +1,16 @@
+body {
+    font-family: 'Didact Gothic', sans-serif !important;
+    background-color: #ffd230 !important;
+    overflow-x: hidden;
+}
+
+#borderRadiusPreviewer {
+    background: black;
+    width: 250px;
+    height: 250px; 
+    border-radius: 15px 50px 30px 5px;
+}
+
+.sansita {
+    font-family: 'Sansita', sans-serif !important;
+}

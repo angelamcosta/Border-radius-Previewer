@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap' rel='stylesheet'>
+    <link href='css/borderRadiusPreviewer.css' rel='stylesheet'>
+    <title>Border-radius Previewer</title>
+</head>
+
+<body>
+    <header class='blog-header py-3'>
+        <div class='row flex-nowrap justify-content-center align-items-center'>
+            <div class='col-4 text-center'>
+                <h3 class='text-dark sansita'>Border-radius Previewer</h3>
+            </div>
+        </div>
+    </header>
+
+    <div class='p-5 mb-4 bg-transparent rounded-3'>
+        <div class='container-fluid py-5'>
+            <div class='row'>
+                <p class='fs-4 fw-bold'>Border-radius Previewer is an application created to solve the <a class='text-secondary' href='https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Border-Radius-Previewer.md' target='_blank' rel='noopener'>Border-radius Previewer</a> challenge proposed by the <a class='text-secondary' href='https://github.com/florinpop17/app-ideas' target='_blank' rel='noopener'>App Ideas Collection</a> repository. The application shows a box which has a border-radius property applied to it. You can change the 4 border-radius values that are applied to the box (top-left, top-right, bottom-left, bottom-right). Once you reach the desired settings, you can copy properties to apply to your own projects.</p>
+            </div>
+            <div class='row g-4 py-5 row-cols-1 row-cols-lg-3'>
+                <div class='feature col'>
+                    <p class='fs-4'>Preview</>
+                    <div id='borderRadiusPreviewer'>
+
+                    </div>
+                </div>
+                <div class='feature col'>
+                    <p class='fs-4'>Enter border values</p>
+                    <div class='col-lg-9 col-sm-12'>
+                        <input class='form-control mb-3' type='text' id='borderRadius1' autocomplete='off'>
+                        <input class='form-control mb-3' type='text' id='borderRadius2' autocomplete='off'>
+                        <input class='form-control mb-3' type='text' id='borderRadius3' autocomplete='off'>
+                        <input class='form-control mb-3' type='text' id='borderRadius4' autocomplete='off'>
+                    </div>
+                </div>
+                <div class='feature col'>
+                    <p class='fs-4'>Get the code</p>
+                    <input class='form-control mb-3' type='text' value='' id='borderRadiusText'>
+                    <button onclick='copyText()' class='btn btn-secondary'>Copy text</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'
+        integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
+    <script src='js/borderRadiusPreviewer.js'></script>
+</body>
+
+</html>
